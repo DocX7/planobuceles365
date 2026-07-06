@@ -18,7 +18,7 @@
       <div class="brand-mark">✦</div>
       <p class="eyebrow">Plano bíblico familiar</p>
       <h1>Família na Palavra</h1>
-      <p class="subtitle">Leitura anual em ordem cronológica, simples para Marcus e Ingrid, com uma área especial para o Arthur.</p>
+      <p class="subtitle">Leitura anual em ordem cronológica, com texto bíblico ACF e uma área especial para o Arthur.</p>
     </header>
 
     <main>
@@ -69,6 +69,18 @@
         <button id="complete-btn" class="primary">Marcar leitura de hoje como concluída</button>
         <button id="next-unread-btn" class="ghost">Ir para próxima leitura</button>
         <button id="reset-profile" class="danger">Reiniciar progresso deste perfil</button>
+      </section>
+
+      <section class="card bible-card" aria-labelledby="bible-title">
+        <div class="card-top">
+          <div>
+            <p class="eyebrow">Texto bíblico ACF</p>
+            <h2 id="bible-title">Leitura completa do dia</h2>
+          </div>
+          <span id="bible-status" class="status-pill soft">Carregando</span>
+        </div>
+        <div id="bible-message" class="note">Carregando o texto bíblico...</div>
+        <div id="bible-text" class="bible-text"></div>
       </section>
 
       <section class="card arthur-card" aria-labelledby="arthur-title">
