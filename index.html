@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#704722" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Família na Palavra" />
+  <title>Família na Palavra</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/icon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="hero">
+      <div class="brand-mark">✦</div>
+      <p class="eyebrow">Plano bíblico familiar</p>
+      <h1>Família na Palavra</h1>
+      <p class="subtitle">Leitura anual em ordem cronológica, simples para Marcus e Ingrid, com uma área especial para o Arthur.</p>
+    </header>
+
+    <main>
+      <section class="card profile-card" aria-labelledby="profile-title">
+        <div>
+          <p class="eyebrow">Quem vai ler hoje?</p>
+          <h2 id="profile-title">Escolha o perfil</h2>
+        </div>
+        <div class="profile-buttons" role="group" aria-label="Escolha do perfil">
+          <button class="chip active" data-profile="Marcus">Marcus</button>
+          <button class="chip" data-profile="Ingrid">Ingrid</button>
+        </div>
+      </section>
+
+      <section class="card reading-card" aria-labelledby="reading-title">
+        <div class="card-top">
+          <div>
+            <p class="eyebrow" id="active-profile-label">Leitura de Marcus</p>
+            <h2 id="reading-title">Dia <span id="day-number">1</span> de 365</h2>
+          </div>
+          <span id="status-pill" class="status-pill">Pendente</span>
+        </div>
+
+        <div class="progress-wrap" aria-label="Progresso anual">
+          <div class="progress-label"><span id="progress-text">0%</span><span id="completed-text">0 de 365 dias</span></div>
+          <div class="progress-track"><div id="progress-bar" class="progress-bar"></div></div>
+        </div>
+
+        <div id="delay-note" class="note hidden"></div>
+
+        <label class="start-field">
+          <span>Data de início do plano</span>
+          <input type="date" id="start-date" />
+        </label>
+
+        <div class="day-controls">
+          <button id="prev-day" class="secondary">← Dia anterior</button>
+          <button id="today-day" class="secondary">Hoje</button>
+          <button id="next-day" class="secondary">Próximo dia →</button>
+        </div>
+
+        <article class="reading-box">
+          <p class="period" id="period-text">Criação e primeiros tempos</p>
+          <h3>Leitura diária</h3>
+          <p id="reading-text" class="reading-text">Gênesis 1–3</p>
+        </article>
+
+        <button id="complete-btn" class="primary">Marcar leitura de hoje como concluída</button>
+        <button id="next-unread-btn" class="ghost">Ir para próxima leitura</button>
+        <button id="reset-profile" class="danger">Reiniciar progresso deste perfil</button>
+      </section>
+
+      <section class="card arthur-card" aria-labelledby="arthur-title">
+        <div class="arthur-top">
+          <div>
+            <p class="eyebrow">Área infantil</p>
+            <h2 id="arthur-title">Arthur na Palavra</h2>
+          </div>
+          <span id="arthur-status" class="status-pill soft">Hoje</span>
+        </div>
+        <div class="story-box">
+          <p class="period" id="arthur-verse">Marcos 10:14</p>
+          <h3 id="arthur-story-title">Jesus ama as crianças</h3>
+          <p id="arthur-story">Jesus recebeu as crianças com amor e mostrou que elas são importantes para Deus.</p>
+        </div>
+        <div class="arthur-grid">
+          <div>
+            <h4>Oração simples</h4>
+            <p id="arthur-prayer">Jesus, obrigado porque o Senhor ama o Arthur. Amém.</p>
+          </div>
+          <div>
+            <h4>Pergunta do dia</h4>
+            <p id="arthur-question">Como Jesus cuida de você?</p>
+          </div>
+        </div>
+        <button id="arthur-done" class="primary arthur-button">Arthur ouviu hoje</button>
+      </section>
+
+      <section class="card install-card">
+        <h2>Instalar no celular</h2>
+        <p>No iPhone: toque em compartilhar e escolha <strong>Adicionar à Tela de Início</strong>. No Android: abra o menu do navegador e toque em <strong>Instalar app</strong> ou <strong>Adicionar à tela inicial</strong>.</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
