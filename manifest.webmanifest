@@ -1,0 +1,14 @@
+{
+  "name": "Família na Palavra",
+  "short_name": "Na Palavra",
+  "description": "Leitura bíblica diária em ordem cronológica com área infantil do Arthur.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f8efe1",
+  "theme_color": "#704722",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
