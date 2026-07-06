@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#6d4726" />
+  <meta name="theme-color" content="#f3f4f8" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Família na Palavra" />
@@ -13,15 +13,33 @@
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="assets/icon.svg" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="christian-classic.css" />
+  <link rel="stylesheet" href="glorify-inspired.css" />
 </head>
 <body>
   <div class="app-shell">
     <header class="hero">
-      <div class="brand-mark">✦</div>
-      <p class="eyebrow">Plano bíblico familiar</p>
-      <h1>Família na Palavra</h1>
-      <p class="subtitle">Leitura anual em ordem cronológica, com texto bíblico ACF e uma área especial para o Arthur.</p>
+      <div class="top-line">
+        <div>
+          <p class="eyebrow">Tema da semana</p>
+          <h1>A Palavra no Lar</h1>
+        </div>
+        <div class="hero-badge" aria-hidden="true">✝</div>
+      </div>
+      <p class="subtitle">Um plano diário simples para conduzir a casa pela Bíblia, com leitura, devoção e espaço especial para o Arthur.</p>
+
+      <div class="week-strip" aria-label="Calendário semanal">
+        <div class="week-date">▣ <span>HOJE</span></div>
+        <button class="calendar-link" type="button">CALENDÁRIO</button>
+        <div class="week-days">
+          <span class="day-dot">S</span>
+          <span class="day-dot">T</span>
+          <span class="day-dot">Q</span>
+          <span class="day-dot active">Q</span>
+          <span class="day-dot">S</span>
+          <span class="day-dot">S</span>
+          <span class="day-dot">D</span>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -63,15 +81,45 @@
           <button id="next-day" class="secondary">Próximo dia →</button>
         </div>
 
-        <article class="reading-box">
-          <p class="period" id="period-text">Criação e primeiros tempos</p>
-          <h3>Leitura diária</h3>
-          <p id="reading-text" class="reading-text">Gênesis 1–3</p>
-        </article>
+        <div class="worship-title">▤ Culto de hoje</div>
 
-        <button id="complete-btn" class="primary">Marcar leitura de hoje como concluída</button>
-        <button id="next-unread-btn" class="ghost">Ir para próxima leitura</button>
-        <button id="reset-profile" class="danger">Reiniciar progresso deste perfil</button>
+        <div class="worship-stack">
+          <article class="worship-card quote-card">
+            <div class="icon">✒</div>
+            <div>
+              <h3>Palavra do dia</h3>
+              <small>Comece com atenção</small>
+            </div>
+            <span class="check">✓</span>
+          </article>
+
+          <article class="worship-card passage-card reading-box">
+            <div class="passage-head">
+              <div>
+                <h3>Passagem</h3>
+                <p class="period" id="period-text">Criação e primeiros tempos</p>
+                <p id="reading-text" class="reading-text">Gênesis 1–3</p>
+              </div>
+              <small>LEITURA</small>
+            </div>
+            <div class="passage-actions">
+              <button id="complete-btn" class="primary">Marcar leitura</button>
+              <button id="next-unread-btn" class="ghost">Próxima</button>
+            </div>
+          </article>
+
+          <article class="mini-card devotional">
+            <div class="icon">▱</div>
+            <div><h3>Texto completo</h3><small>Abra a Bíblia abaixo</small></div>
+            <small>ACF</small>
+          </article>
+
+          <article class="mini-card reflection">
+            <div class="icon">◌</div>
+            <div><h3>Progresso</h3><small>Continue a jornada</small></div>
+            <button id="reset-profile" class="danger">Reiniciar</button>
+          </article>
+        </div>
       </section>
 
       <section class="card bible-card" aria-labelledby="bible-title">
@@ -114,7 +162,7 @@
 
       <section class="card install-card">
         <h2>Instalar no celular</h2>
-        <p>No iPhone: toque em compartilhar e escolha <strong>Adicionar à Tela de Início</strong>. No Android: abra o menu do navegador e toque em <strong>Instalar app</strong> ou <strong>Adicionar à tela inicial</strong>.</p>
+        <p>No iPhone: toque em compartilhar e escolha <strong>Adicionar à Tela de Início</strong>.</p>
       </section>
     </main>
   </div>
