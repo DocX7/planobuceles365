@@ -1,5 +1,5 @@
-const CACHE_NAME = "familia-na-palavra-v5";
-const APP_ASSETS = ["./", "index.html", "styles.css", "app.js", "manifest.webmanifest", "assets/icon.svg"];
+const CACHE_NAME = "familia-na-palavra-theme-v1";
+const APP_ASSETS = ["./", "index.html", "theme.css", "app.js", "enhancements.js", "manifest.webmanifest", "assets/icon.svg"];
 
 self.addEventListener("install", function(event) {
   event.waitUntil(
